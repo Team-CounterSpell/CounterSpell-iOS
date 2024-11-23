@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showWebView = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Button {
+                    showWebView = true
+                } label: {
+                    Image(systemName: "globe")
+                        .imageScale(.large)
+                        .foregroundStyle(.tint)
+                }
+
+                NavigationLink(
+                    destination: WebViewContainer(urlToLoad: "https://helpful-cactus-6dd5e8.netlify.app/"),
+                    isActive: $showWebView
+                ) {
+                    EmptyView()
+                }
+
+
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

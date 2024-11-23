@@ -71,7 +71,7 @@ struct SlowalkTextField: View {
                                     .disabled(isDisabled)
                                     .slowalkFont(.regular, size: 14)
                                     .overlay {
-                                        RoundedRectangle(cornerRadius: 8)
+                                        RoundedRectangle(cornerRadius: 15)
                                             .strokeBorder(borderColor)
                                     }
                                     .cornerRadius(8)

@@ -43,6 +43,8 @@ struct AppColor {
     static let main400 = Color("main400")
     static let main500 = Color("main500")
     static let main600 = Color("main600")
+    static let gray10 = Color("gray10")
+    static let peopel = Color("people1")
 
 }
 
