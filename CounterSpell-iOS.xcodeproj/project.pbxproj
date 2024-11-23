@@ -6,14 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EA52D7162CF1D359001C9D4E /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA52D70F2CF1D359001C9D4E /* Pretendard-ExtraBold.ttf */; };
+		EA52D7172CF1D359001C9D4E /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA52D7132CF1D359001C9D4E /* Pretendard-Regular.ttf */; };
+		EA52D7182CF1D359001C9D4E /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA52D7152CF1D359001C9D4E /* Pretendard-Thin.ttf */; };
+		EA52D7192CF1D359001C9D4E /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA52D70D2CF1D359001C9D4E /* Pretendard-Black.ttf */; };
+		EA52D71A2CF1D359001C9D4E /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA52D7102CF1D359001C9D4E /* Pretendard-ExtraLight.ttf */; };
+		EA52D71B2CF1D359001C9D4E /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA52D7142CF1D359001C9D4E /* Pretendard-SemiBold.ttf */; };
+		EA52D71C2CF1D359001C9D4E /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA52D70E2CF1D359001C9D4E /* Pretendard-Bold.ttf */; };
+		EA52D71D2CF1D359001C9D4E /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA52D7122CF1D359001C9D4E /* Pretendard-Medium.ttf */; };
+		EA52D71E2CF1D359001C9D4E /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA52D7112CF1D359001C9D4E /* Pretendard-Light.ttf */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EA5175EE2CF0C7EA00795C3C /* CounterSpell-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CounterSpell-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA52D70D2CF1D359001C9D4E /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Black.ttf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 6/public/static/alternative/Pretendard-Black.ttf"; sourceTree = "<absolute>"; };
+		EA52D70E2CF1D359001C9D4E /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.ttf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 6/public/static/alternative/Pretendard-Bold.ttf"; sourceTree = "<absolute>"; };
+		EA52D70F2CF1D359001C9D4E /* Pretendard-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraBold.ttf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 6/public/static/alternative/Pretendard-ExtraBold.ttf"; sourceTree = "<absolute>"; };
+		EA52D7102CF1D359001C9D4E /* Pretendard-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraLight.ttf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 6/public/static/alternative/Pretendard-ExtraLight.ttf"; sourceTree = "<absolute>"; };
+		EA52D7112CF1D359001C9D4E /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Light.ttf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 6/public/static/alternative/Pretendard-Light.ttf"; sourceTree = "<absolute>"; };
+		EA52D7122CF1D359001C9D4E /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.ttf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 6/public/static/alternative/Pretendard-Medium.ttf"; sourceTree = "<absolute>"; };
+		EA52D7132CF1D359001C9D4E /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.ttf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 6/public/static/alternative/Pretendard-Regular.ttf"; sourceTree = "<absolute>"; };
+		EA52D7142CF1D359001C9D4E /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-SemiBold.ttf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 6/public/static/alternative/Pretendard-SemiBold.ttf"; sourceTree = "<absolute>"; };
+		EA52D7152CF1D359001C9D4E /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Thin.ttf"; path = "/Users/seojiwan/Downloads/Pretendard 1.3.9 6/public/static/alternative/Pretendard-Thin.ttf"; sourceTree = "<absolute>"; };
+		EA52D71F2CF1D42A001C9D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EA5175F02CF0C7EA00795C3C /* CounterSpell-iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "CounterSpell-iOS";
+			sourceTree = "<group>";
+		};
+		EA5176E12CF1CFA800795C3C /* Application */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EA5176E62CF1CFAB00795C3C /* DesignSystem */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +64,7 @@
 		EA5175E52CF0C7EA00795C3C = {
 			isa = PBXGroup;
 			children = (
-				EA5175F02CF0C7EA00795C3C /* CounterSpell-iOS */,
+				EA5176DF2CF1CF9B00795C3C /* CounterSpell-iOS */,
 				EA5175EF2CF0C7EA00795C3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +75,34 @@
 				EA5175EE2CF0C7EA00795C3C /* CounterSpell-iOS.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EA5176DF2CF1CF9B00795C3C /* CounterSpell-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA52D71F2CF1D42A001C9D4E /* Info.plist */,
+				EA5176EA2CF1CFC100795C3C /* Font */,
+				EA5175F02CF0C7EA00795C3C /* CounterSpell-iOS */,
+				EA5176E62CF1CFAB00795C3C /* DesignSystem */,
+				EA5176E12CF1CFA800795C3C /* Application */,
+			);
+			path = "CounterSpell-iOS";
+			sourceTree = "<group>";
+		};
+		EA5176EA2CF1CFC100795C3C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EA52D70D2CF1D359001C9D4E /* Pretendard-Black.ttf */,
+				EA52D70E2CF1D359001C9D4E /* Pretendard-Bold.ttf */,
+				EA52D70F2CF1D359001C9D4E /* Pretendard-ExtraBold.ttf */,
+				EA52D7102CF1D359001C9D4E /* Pretendard-ExtraLight.ttf */,
+				EA52D7112CF1D359001C9D4E /* Pretendard-Light.ttf */,
+				EA52D7122CF1D359001C9D4E /* Pretendard-Medium.ttf */,
+				EA52D7132CF1D359001C9D4E /* Pretendard-Regular.ttf */,
+				EA52D7142CF1D359001C9D4E /* Pretendard-SemiBold.ttf */,
+				EA52D7152CF1D359001C9D4E /* Pretendard-Thin.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,6 +122,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				EA5175F02CF0C7EA00795C3C /* CounterSpell-iOS */,
+				EA5176E12CF1CFA800795C3C /* Application */,
+				EA5176E62CF1CFAB00795C3C /* DesignSystem */,
 			);
 			name = "CounterSpell-iOS";
 			packageProductDependencies = (
@@ -109,6 +171,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA52D7162CF1D359001C9D4E /* Pretendard-ExtraBold.ttf in Resources */,
+				EA52D7172CF1D359001C9D4E /* Pretendard-Regular.ttf in Resources */,
+				EA52D7182CF1D359001C9D4E /* Pretendard-Thin.ttf in Resources */,
+				EA52D7192CF1D359001C9D4E /* Pretendard-Black.ttf in Resources */,
+				EA52D71A2CF1D359001C9D4E /* Pretendard-ExtraLight.ttf in Resources */,
+				EA52D71B2CF1D359001C9D4E /* Pretendard-SemiBold.ttf in Resources */,
+				EA52D71C2CF1D359001C9D4E /* Pretendard-Bold.ttf in Resources */,
+				EA52D71D2CF1D359001C9D4E /* Pretendard-Medium.ttf in Resources */,
+				EA52D71E2CF1D359001C9D4E /* Pretendard-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +322,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CounterSpell-iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CounterSpell-iOS\"";
 				DEVELOPMENT_TEAM = 3NVCLTSP9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CounterSpell-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,10 +352,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CounterSpell-iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CounterSpell-iOS\"";
 				DEVELOPMENT_TEAM = 3NVCLTSP9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CounterSpell-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
