@@ -7,29 +7,26 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct ContentView: View {
-    @State private var showWebView = false
+    @State private var showSplash = true // SplashView를 제어하는 상태 변수
+
     var body: some View {
-        NavigationView {
-            VStack {
-                Button {
-                    showWebView = true
-                } label: {
-                    Image(systemName: "globe")
-                        .imageScale(.large)
-                        .foregroundStyle(.tint)
-                }
-
-                NavigationLink(
-                    destination: WebViewContainer(urlToLoad: "https://helpful-cactus-6dd5e8.netlify.app/"),
-                    isActive: $showWebView
-                ) {
-                    EmptyView()
-                }
-
-
+        Group {
+            if showSplash {
+                SplashView()
+            } else {
+                SignInView()
             }
-            .padding()
+        }
+        .onAppear {
+            // 2초 후에 SplashView를 종료
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation(.easeInOut) {
+                    showSplash = false
+                }
+            }
         }
     }
 }

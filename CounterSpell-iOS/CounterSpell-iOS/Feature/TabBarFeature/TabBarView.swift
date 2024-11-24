@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct TabBarView: View {
-    @State private var selectedTab = 1
+    @State private var selectedTab = 2
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            WebView(urlToLoad: "https://oecook.netlify.app/")
+            WebView(urlToLoad: "https://exquisite-granita-81a4b8.netlify.app/")
                 .navigationBarBackButtonHidden(true)
                 .tabItem {
                     Image(selectedTab == 1 ? "1map" : "map")

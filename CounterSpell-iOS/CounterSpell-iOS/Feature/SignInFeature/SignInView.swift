@@ -12,20 +12,42 @@ struct SignInView: View {
     @State private var idTextField: String = ""
     @State private var passwordTextField: String = ""
     @State private var isSecure = true
+    @State private var showLoading: Bool = false
+    @State private var navigateToTabBar: Bool = false
 
     var body: some View {
         VStack(spacing: 0) {
+            if navigateToTabBar {
+                TabBarView()
+            } else {
+                contentView
+            }
+        }
+        .overlay(
+            ZStack {
+                if showLoading {
+                    LoadingView()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color.black.opacity(0.4))
+                        .edgesIgnoringSafeArea(.all)
+                }
+            }
+        )
+    }
+
+    private var contentView: some View {
+        VStack(spacing: 0) {
+
+            Image("eee")
+                .resizable()
+                .frame(width: 200, height: 250)
             SlowalkTextField(
                 "아이디를 입력해주세요.",
                 text: $idTextField,
                 title: "아이디"
             )
             .padding(.horizontal, 10)
-//            SlowalkTextField(
-//                "비밀번호를 입력해주세요.",
-//                text: $passwordTextField,
-//                title: "비밀번호"
-//            )
+
             SlowalkTextField(
                 "비밀번호를 입력해주세요.",
                 text: $passwordTextField,
@@ -52,7 +74,9 @@ struct SignInView: View {
                 verticalPadding: 16,
                 backColor: .main,
                 actionColor: .main300
-            )
+            ) {
+                handleLogin()
+            }
             .padding(.top, 75)
 
             HStack(spacing: 5) {
@@ -88,8 +112,18 @@ struct SignInView: View {
             }
             .padding(.top, 28)
 
-
             Spacer()
+        }
+    }
+
+    private func handleLogin() {
+        showLoading = true
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            showLoading = false
+            withAnimation(nil) { // 애니메이션 없이 상태 전환
+                navigateToTabBar = true
+            }
         }
     }
 }
@@ -97,3 +131,4 @@ struct SignInView: View {
 #Preview {
     SignInView()
 }
+

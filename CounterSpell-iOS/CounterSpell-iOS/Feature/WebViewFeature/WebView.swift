@@ -1,10 +1,3 @@
-//
-//  WebView.swift
-//  CounterSpell-iOS
-//
-//  Created by 서지완 on 11/22/24.
-//
-
 import SwiftUI
 import WebKit
 import AVFoundation
@@ -19,6 +12,9 @@ struct WebView: UIViewRepresentable {
     func makeUIView(context: Context) -> WKWebView {
         let config = WKWebViewConfiguration()
         config.allowsInlineMediaPlayback = true
+        config.preferences.javaScriptEnabled = true // 자바스크립트 활성화
+        config.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs") // 파일 액세스 허용
+
         if #available(iOS 10.0, *) {
             config.mediaTypesRequiringUserActionForPlayback = []
         }
@@ -76,7 +72,7 @@ struct WebView: UIViewRepresentable {
         }
 
         // UIImagePickerControllerDelegate 메서드 - 촬영 완료 시 호출
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
             picker.dismiss(animated: true, completion: nil)
             if let image = info[.originalImage] as? UIImage {
                 sendImageToWebView(image: image)
@@ -109,10 +105,8 @@ struct WebView: UIViewRepresentable {
             }
         }
 
-        // 웹뷰 로드 완료 시 웹뷰 참조 저장 및 카메라 자동 호출
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             self.webView = webView
-            
         }
 
         // 네이티브 카메라 자동 호출 함수

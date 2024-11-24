@@ -100,7 +100,7 @@ struct SlowalkTextField: View {
 
                 if eyesState {
                     Image(systemName: eyesState2 ? "eye.slash" : "eye")
-                        .padding(.leading, 310)
+                        .padding(.leading, 285)
                         .padding(.top, 3)
                         .onTapGesture {
                             eyesState2.toggle()

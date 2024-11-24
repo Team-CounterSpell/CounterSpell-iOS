@@ -11,7 +11,9 @@ import SwiftUI
 struct CounterSpell_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            //TabBarView()
+            //SignInView()
+            ContentView()
         }
     }
 }
